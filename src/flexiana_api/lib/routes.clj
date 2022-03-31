@@ -7,6 +7,6 @@
   "Response whether a scramble is found"
   [s1 s2]
   {:status 200
-   :headers {"Content-Type" "application/json" "Access-Control-Allow-Origin" "https://localhost"}
+   :headers {"Content-Type" "application/json" "Access-Control-Allow-Origin" "http://localhost:3000"}
    :body (-> (String/valueOf(api/scramble? s1 s2)))}
 )
